@@ -1,0 +1,29 @@
+$breakpoint-xs: 540px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 960px;
+$breakpoint-ipad-yoko: 1024px;
+
+
+@mixin xs {
+  @media screen and (max-width: $breakpoint-xs) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media screen and (max-width: $breakpoint-sm) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (max-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin ipad-yoko {
+  @media screen and (max-width: $breakpoint-ipad-yoko) {
+    @content;
+  }
+}

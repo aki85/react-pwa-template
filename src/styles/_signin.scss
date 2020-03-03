@@ -1,0 +1,55 @@
+#signin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  .sign-wrapper{
+    width: 60%;
+    max-width: 800px;
+    min-width: 316px;
+    .heading{
+      margin-bottom: 2rem;
+      h1{
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 2.5rem;
+        text-align: center;
+        @include sm{
+          font-size: 2rem;
+        }
+      }
+    }
+    .signin-form{
+      input{
+        height: 48px;
+        border: 1px solid #979797;
+        margin-bottom: 2rem;
+        @include sm{
+          height: 40px;
+          margin-bottom: 1.25rem;
+        }
+      }
+    }
+    .signinBtn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: #E59042;
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 2rem auto 0;
+      width: 300px;
+      height: 60px;
+      border-radius: 30px;
+      border: none;
+      @include sm{
+        font-size: 1.25rem;
+        margin: 1.5rem auto 0;
+        width: 240px;
+        height: 44px;
+      }
+    }
+  }
+}

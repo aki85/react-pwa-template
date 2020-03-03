@@ -1,0 +1,134 @@
+.Overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.Modal {
+  background-color: #eee;
+  width: 65%;
+  padding: 40px 20px;
+  border-radius: 8px;
+  outline: transparent;
+  .modal-heading{
+    margin-bottom: 40px;
+    h1{
+      font-size: 40px;
+    }
+    h1.mini{
+      font-size: 32px;
+      font-weight: bold;
+      margin: 0 8px;
+    }
+    img{
+      width: 144px;
+    }
+  }
+  .modal-contents{
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    h2{
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
+    .note-message{
+      margin-bottom: 8px;
+    }
+    .list-group{
+      text-align: left;
+      .list-group-item{
+        padding: 8px 24px;
+        font-size: 20px;
+        font-weight: bold;
+        border: 1px solid #979797;
+        &.selected{
+          background-color: #CBE9D6;
+        }
+      }
+    }
+    .pagination-box{
+      text-align: center;
+      margin-bottom: 16px;
+      .pagination{
+        border-radius: 8px;
+        margin: 0;
+        li{
+          display: inline-block;
+          vertical-align: middle;
+        }
+        li a, div{
+          display: block;
+          background: #aaa;
+          color: #fff;
+          font-weight: bold;
+          font-size: 20px;
+          border: none;
+          width: 40px;
+          height: 40px;
+        }
+        li div{
+          line-height: 40px;
+        }
+        li.active a{
+          background: #175C37;
+        }
+        li:not(.active) a{
+          cursor: pointer;
+        }
+      }
+    }
+    .btn{
+      background: #979797;
+      color: #fff;
+      width: 200px;
+      height: 64px;
+      line-height: 64px;
+      margin: 0 8px;
+    }
+    .battleBtn{
+      background: #CC2323;
+    }
+    .btn.delete{
+      background: #D21D1D;
+    }
+    .loading-list-img{
+      margin-top: 0;
+      padding-top: 32px;
+      height: 302px;
+      .loader{
+        margin-top: 24px;
+        font-size: 10px;
+      }
+    }
+  }
+  .modal-form{
+    width: 85%;
+    margin: 0 auto;
+    label{
+      padding: 0;
+      line-height: 40px;
+      text-align: center;
+    }
+    input{
+      font-weight: bold;
+      font-size: 20px;
+      height: 48px;
+      border: 2px solid #676767;
+      border-radius: 8px;
+      margin-bottom: 4px;
+    }
+    .btn{
+      background: #108746;
+      width: 200px;
+      height: 64px;
+      line-height: 64px;
+    }
+  }
+}
